@@ -1,0 +1,16 @@
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.csproj.AssemblyReference.cache
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.GeneratedMSBuildEditorConfig.editorconfig
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.AssemblyInfoInputs.cache
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.AssemblyInfo.cs
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.csproj.CoreCompileInputs.cache
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/Basics
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/Basics.deps.json
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/Basics.runtimeconfig.json
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/Basics.runtimeconfig.dev.json
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/Basics.dll
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/ref/Basics.dll
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/bin/Debug/net5.0/Basics.pdb
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.dll
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/ref/Basics.dll
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.pdb
+/home/hugofnm/Documents/EPITA/TPs/C#/tp0-hugo.meleiro/Basics/Basics/obj/Debug/net5.0/Basics.genruntimeconfig.cache

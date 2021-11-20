@@ -28,34 +28,30 @@ namespace Basics
 
         public static double Pow(double x, int n)
         {
-            if (n>0)
+            double res = 1;
+            switch (n)
             {
-                double res = 1;
-                for (int i = 0; i < n; i++)
-                {
-                    res = res * x;
-                }
-                Console.WriteLine(res);
-                return res;
+                case >0:
+                    res = Pow(x, n - 1) * x;
+                    return res;
+                    break;
+                case <0:
+                    res = Pow(x, n - 1) / x;
+                    return res;
+                    break;
+                case 0:
+                    return res;
+                    Console.WriteLine(res);       
             }
-            else
-            {
-                double res = 1;
-                for (int i = n; i < 0; i++)
-                {
-                    res = res / x;
-                }
-                Console.WriteLine(res);
-                return res;
-            };
         }
 
         public static uint Factorial(uint n)
         {
             uint res = n;
-            for (int i = 0; i == n; i++)
+            for (uint i = 0; i == n; i++)
             {
                 res = res * (n - 1);
+                return res;
             }
             Console.WriteLine(res);
             return res;
@@ -87,23 +83,18 @@ namespace Basics
         public static uint Fibonacci(uint n)
         {
             uint res = 0;
-            if (n == 0)
+            switch (n)
             {
-                res = 0;
-            }
-            else
-            {
-                if (n == 1)
-                {
+                case 0 :
+                    res = 0;
+                    break;
+                case 1 :
+                case 2 :
                     res = 1;
-                }
-                else
-                {
-                    for (int i = 2; i > n; i++)
-                    {
-                        res = (Fibonacci( n - 1)) + (Fibonacci(n - 2));   
-                    }
-                }
+                    break;
+                default :
+                    res = (Fibonacci( n - 1)) + (Fibonacci(n - 2));
+                    break;
             }
             Console.WriteLine(res);
             return res;
@@ -116,12 +107,16 @@ namespace Basics
                 if (i % 3 == 0)
                 {
                     Console.WriteLine("Sherlock");
+                    return "Sherlock";
                 }
                 else if (i % 5 == 0)
                 {
                     Console.WriteLine("Holmes");
+                    return "Holmes";
                 }
             }
+
+            return "HEllo";
         }
     }
 }
