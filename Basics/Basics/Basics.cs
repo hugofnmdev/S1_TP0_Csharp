@@ -28,57 +28,67 @@ namespace Basics
 
         public static double Pow(double x, int n)
         {
-            double res = 1;
+            double res;
             switch (n)
             {
                 case >0:
                     res = Pow(x, n - 1) * x;
+                    Console.WriteLine(res);
                     return res;
-                    break;
                 case <0:
-                    res = Pow(x, n - 1) / x;
+                    res = Pow(x, n + 1) / x;
+                    Console.WriteLine(res);
                     return res;
-                    break;
                 case 0:
-                    return res;
-                    Console.WriteLine(res);       
+                    Console.WriteLine(1);
+                    return 1;
             }
         }
 
         public static uint Factorial(uint n)
         {
-            uint res = n;
-            for (uint i = 0; i == n; i++)
+            uint res;
+            switch (n)
             {
-                res = res * (n - 1);
-                return res;
+                case >0:
+                    res = Factorial(n - 1) * n;
+                    Console.WriteLine(res);
+                    return res;
+                default:
+                    res = 1;
+                    Console.WriteLine(res);
+                    return res;
             }
-            Console.WriteLine(res);
-            return res;
         }
         
-        public static bool IsPrime(uint n)
+        public static bool Prime(uint n, uint i)
         {
-            if (n == 1 || n == 0)
+            if (i == 1)
             {
-                Console.WriteLine(false);
-                return false;
+                return true;
             }
             else
             {
-                for (int a = 2; a <= n / 2; a++)
+                if (n % i==0) 
                 {
-                    if (n % a == 0)
-                    {
-                        Console.WriteLine(false);
-                        return false;
-                    }
-
+                    return false;
                 }
-                Console.WriteLine(true); 
-                return true;
+                else
+                {
+                    return Prime(n, (i - 1));
+                }
+                    
             }
         }
+            
+        
+
+        public static bool IsPrime(uint n)
+        {
+            Console.WriteLine(Prime(n, n/2));
+            return Prime(n, 2);
+        }
+
 
         public static uint Fibonacci(uint n)
         {
@@ -102,21 +112,47 @@ namespace Basics
 
         public static string SherlockHolmes(uint n)
         {
-            for (int i = 1; i <= n; i++)
+            string res = "";
+            switch (n)
             {
-                if (i % 3 == 0)
-                {
-                    Console.WriteLine("Sherlock");
-                    return "Sherlock";
-                }
-                else if (i % 5 == 0)
-                {
-                    Console.WriteLine("Holmes");
-                    return "Holmes";
-                }
+                case 1:
+                    res = "1";
+                    Console.Write("1 ");
+                    return res;
+                case >1 when n%3==0:
+                    if (n % 15 == 0)
+                    {
+                        res = "Sherlock Holmes " + SherlockHolmes(n-1);
+                        Console.Write("Sherlock Holmes ");
+                        return res;
+                    }
+                    else
+                    {
+                        res = "Sherlock " + SherlockHolmes(n-1);
+                        Console.Write("Sherlock ");
+                        return res;   
+                    }
+                case >1 when n % 5 == 0:
+                    if (n % 15 == 0)
+                    {
+                        res = "Sherlock Holmes " + SherlockHolmes(n-1);
+                        Console.Write("Sherlock Holmes ");
+                        return res;
+                    }
+                    else
+                    {
+                        res = "Holmes " + SherlockHolmes(n-1);
+                        Console.Write("Holmes ");
+                        return res;   
+                    }
+                case 0:
+                    res = "";
+                    return res;
+                default:
+                    res = n + SherlockHolmes(n-1);
+                    Console.Write(n + " ");
+                    return res;;
             }
-
-            return "HEllo";
         }
     }
 }
